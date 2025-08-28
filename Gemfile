@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
+ruby '3.4.5'
+
 gem "hanami", "~> 2.2"
 gem "hanami-assets", "~> 2.2"
 gem "hanami-controller", "~> 2.2"
