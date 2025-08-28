@@ -18,7 +18,7 @@ gem "puma"
 gem "rake"
 
 gem 'mysql2', '~> 0.5'          # For development (MySQL)
-gem 'pg', '~> 1.2'              # For production (PostgreSQL)
+gem 'pg', '~> 1.6'              # For production (PostgreSQL)
 gem 'sqlite3', '~> 1.4'         # For testing (SQLite)
 
 group :development do
