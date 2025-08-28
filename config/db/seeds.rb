@@ -13,3 +13,9 @@
 #
 #   categories = Hanami.app["relations.categories"]
 #   categories.insert(title: "General")
+
+# config/db/seeds.rb
+
+# Example seed data
+Author.create(first_name: 'John', last_name: 'Doe')
+Author.create(first_name: 'Jane', last_name: 'Smith')

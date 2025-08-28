@@ -14,7 +14,10 @@ gem "dry-types", "~> 1.7"
 gem "dry-operation"
 gem "puma"
 gem "rake"
-gem "mysql2"
+
+gem 'mysql2', '~> 0.5'          # For development (MySQL)
+gem 'pg', '~> 1.2'              # For production (PostgreSQL)
+gem 'sqlite3', '~> 1.4'         # For testing (SQLite)
 
 group :development do
   gem "hanami-webconsole", "~> 2.2"
