@@ -16,10 +16,9 @@ gem "dry-types", "~> 1.7"
 gem "dry-operation"
 gem "puma"
 gem "rake"
-
-gem 'mysql2', '~> 0.5'          # For development (MySQL)
-gem 'pg', '~> 1.6'              # For production (PostgreSQL)
-gem 'sqlite3', '~> 1.4'         # For testing (SQLite)
+gem 'pg', '>= 1.2'  # For production on Railway
+gem 'rack-cors', require: 'rack/cors'  # For CORS support
+gem 'hanami-model'
 
 group :development do
   gem "hanami-webconsole", "~> 2.2"
@@ -35,4 +34,13 @@ end
 
 group :cli, :development, :test do
   gem "hanami-rspec", "~> 2.2"
+end
+
+group :test do
+  # Database
+  gem "database_cleaner-sequel"
+
+  # Web integration
+  gem "capybara"
+  gem "rack-test"
 end

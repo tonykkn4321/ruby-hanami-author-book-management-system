@@ -3,7 +3,7 @@
 
 require "dry/operation"
 
-module Test
+module App
   class Operation < Dry::Operation
   end
 end

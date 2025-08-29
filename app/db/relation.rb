@@ -2,7 +2,7 @@
 
 require "hanami/db/relation"
 
-module Test
+module App
   module DB
     class Relation < Hanami::DB::Relation
     end

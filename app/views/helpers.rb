@@ -1,7 +1,7 @@
 # auto_register: false
 # frozen_string_literal: true
 
-module Test
+module App
   module Views
     module Helpers
       # Add your view helpers here

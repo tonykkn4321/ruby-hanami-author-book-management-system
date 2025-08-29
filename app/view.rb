@@ -3,7 +3,7 @@
 
 require "hanami/view"
 
-module Test
+module App
   class View < Hanami::View
   end
 end
