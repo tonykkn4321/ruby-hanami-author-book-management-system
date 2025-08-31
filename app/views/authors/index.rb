@@ -1,10 +1,7 @@
 module Tx
   module Views
     module Authors
-      class Index
-        include Hanami::View
-
-        # Optional: define locals or helpers here
+      class Index < Hanami::View
         def locals(context)
           {
             authors: context[:authors]
