@@ -1,8 +1,16 @@
-module Authors
-  class Index < Hanami::Action
-    def handle(request, response)
-      authors = AuthorRepository.new.all
-      response.body = authors.to_json
+module Tx
+  module Views
+    module Authors
+      class Index
+        include Hanami::View
+
+        # Optional: define locals or helpers here
+        def locals(context)
+          {
+            authors: context[:authors]
+          }
+        end
+      end
     end
   end
 end
