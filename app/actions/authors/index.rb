@@ -3,12 +3,10 @@ module Tx
     module Authors
       class Index < Hanami::Action
         def handle(request, response)
-          authors = AuthorRepository.new.all
+          authors = ::AuthorRepository.new.all
 
-          response.render(
-            view: Tx::Views::Authors::Index.new,
-            context: { authors: authors }
-          )
+          response.status = 200
+          response.body = authors.to_json
         end
       end
     end
