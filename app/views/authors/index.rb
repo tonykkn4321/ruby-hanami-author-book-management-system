@@ -1,6 +1,6 @@
-require_relative '../..web'
-module Web::Actions::Authors
-  class Index < Web::Action
+
+module Actions::Authors
+  class Index < Action
     def handle(request, response)
       authors = AuthorRepository.new.all
       response.body = authors.to_json
