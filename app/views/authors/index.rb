@@ -1,3 +1,4 @@
+require_relative '../..web'
 module Web::Actions::Authors
   class Index < Web::Action
     def handle(request, response)
