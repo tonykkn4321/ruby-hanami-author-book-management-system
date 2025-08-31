@@ -1,4 +1,4 @@
-module Actions::Authors
+module Web::Actions::Authors
   class Index < Web::Action
     def handle(request, response)
       authors = AuthorRepository.new.all
