@@ -2,5 +2,4 @@
 log/*
 public/
 node_modules/
-db/*.sqlite
 spec/examples.txt

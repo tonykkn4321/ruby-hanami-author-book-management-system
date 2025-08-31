@@ -3,7 +3,7 @@
 
 require "dry/operation"
 
-module App
+module Tx
   class Operation < Dry::Operation
   end
 end

@@ -16,9 +16,7 @@ gem "dry-types", "~> 1.7"
 gem "dry-operation"
 gem "puma"
 gem "rake"
-gem 'pg', '>= 1.2'  # For production on Railway
-gem 'rack-cors', require: 'rack/cors'  # For CORS support
-gem 'hanami-model'
+gem "pg"
 
 group :development do
   gem "hanami-webconsole", "~> 2.2"

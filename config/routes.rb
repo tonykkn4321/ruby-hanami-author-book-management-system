@@ -1,19 +1,21 @@
-# config/routes.rb
+# frozen_string_literal: true
 
-module App
+module Tx
   class Routes < Hanami::Routes
-    get '/authors', to: 'authors#index'
-    post '/authors', to: 'authors#create'
-    get '/authors/:id', to: 'authors#show'
-    put '/authors/:id', to: 'authors#update'
-    patch '/authors/:id', to: 'authors#update'
-    delete '/authors/:id', to: 'authors#destroy'
+    # Add your routes here. See https://guides.hanamirb.org/routing/overview/ for details.
+    get    '/authors',        to: 'authors.index'
+    post   '/authors',        to: 'authors.create'
+    get    '/authors/:id',    to: 'authors.show'
+    patch  '/authors/:id',    to: 'authors.update'
+    put    '/authors/:id',    to: 'authors.update'
+    delete '/authors/:id',    to: 'authors.delete'
 
-    get '/books', to: 'books#index'
-    post '/books', to: 'books#create'
-    get '/books/:id', to: 'books#show'
-    put '/books/:id', to: 'books#update'
-    patch '/books/:id', to: 'books#update'
-    delete '/books/:id', to: 'books#destroy'
+    get    '/books',          to: 'books.index'
+    post   '/books',          to: 'books.create'
+    get    '/books/:id',      to: 'books.show'
+    patch  '/books/:id',      to: 'books.update'
+    put    '/books/:id',      to: 'books.update'
+    delete '/books/:id',      to: 'books.delete'
+
   end
 end

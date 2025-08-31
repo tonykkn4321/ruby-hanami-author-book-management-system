@@ -1,14 +1,2 @@
-default: &default
-  adapter: postgres
-  encoding: unicode
-  pool: 5
-  url: <%= ENV['DATABASE_URL'] %>
-
-development:
-  <<: *default
-
-test:
-  url: postgres://localhost/author_book_management_system_test
-
 production:
-  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

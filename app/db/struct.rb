@@ -2,7 +2,7 @@
 
 require "hanami/db/struct"
 
-module App
+module Tx
   module DB
     class Struct < Hanami::DB::Struct
     end

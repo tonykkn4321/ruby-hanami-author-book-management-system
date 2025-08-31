@@ -2,7 +2,7 @@
 
 require "dry/types"
 
-module App
+module Tx
   Types = Dry.Types
 
   module Types

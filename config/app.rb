@@ -2,7 +2,7 @@
 
 require "hanami"
 
-module App
+module Tx
   class App < Hanami::App
   end
 end
