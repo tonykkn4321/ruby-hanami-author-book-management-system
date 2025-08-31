@@ -20,7 +20,7 @@ hanami generate migration create_authors
 hanami generate migration create_books
 
 # After modified the create_authors and create_books:
-hanami db prepare
+hanami db prepare (for localhost)
 
 # Railway customer start command:
-bundle exec hanami db prepare
+hanami db migrate
