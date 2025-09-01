@@ -1,6 +1,6 @@
 module Tx::Actions::Books
   class Show < Tx::Action
-    include Deps["repositories.book_repository"]
+    include Import["repositories.book_repository"]
     def handle(req, res)
       book = Tx::Repositories::BookRepository.new.find(req.params[:id])
       if book

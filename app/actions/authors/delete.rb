@@ -1,6 +1,6 @@
 module Tx::Actions::Authors
   class Delete < Tx::Action
-    include Deps["repositories.author_repository"]
+    include Import["repositories.author_repository"]
     def handle(req, res)
       repo = Tx::Repositories::AuthorRepository.new
       author = repo.find(req.params[:id])

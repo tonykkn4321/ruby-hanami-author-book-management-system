@@ -1,6 +1,6 @@
 module Tx::Actions::Authors
   class Show < Tx::Action
-    include Deps["repositories.author_repository"]
+    include Import["repositories.author_repository"]
     def handle(req, res)
       author = Tx::Repositories::AuthorRepository.new.find(req.params[:id])
       if author
