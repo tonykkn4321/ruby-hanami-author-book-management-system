@@ -1,11 +1,15 @@
-# frozen_string_literal: true
+module App::Actions::Authors
+  class Update < App::Action
+    def handle(req, res)
+      repo = AuthorRepository.new
+      author = repo.find(req.params[:id])
 
-module Tx
-  module Actions
-    module Authors
-      class Update < Tx::Action
-        def handle(request, response)
-        end
+      if author
+        updated = repo.update(author.id, req.params.slice(:first_name, :last_name))
+        res.body = updated.to_h.to_json
+      else
+        res.status = 404
+        res.body = { error: "Author not found" }.to_json
       end
     end
   end

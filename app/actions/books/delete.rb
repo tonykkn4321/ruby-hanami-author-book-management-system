@@ -1,11 +1,15 @@
-# frozen_string_literal: true
+module App::Actions::Books
+  class Delete < App::Action
+    def handle(req, res)
+      repo = BookRepository.new
+      book = repo.find(req.params[:id])
 
-module Tx
-  module Actions
-    module Books
-      class Delete < Tx::Action
-        def handle(request, response)
-        end
+      if book
+        repo.delete(book.id)
+        res.status = 204
+      else
+        res.status = 404
+        res.body = { error: "Book not found" }.to_json
       end
     end
   end

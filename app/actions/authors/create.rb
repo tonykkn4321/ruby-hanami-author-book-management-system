@@ -1,12 +1,10 @@
-# frozen_string_literal: true
-
-module Tx
-  module Actions
-    module Authors
-      class Create < Tx::Action
-        def handle(request, response)
-        end
-      end
+module App::Actions::Authors
+  class Create < App::Action
+    def handle(req, res)
+      input = req.params.slice(:first_name, :last_name)
+      author = AuthorRepository.new.create(input)
+      res.status = 201
+      res.body = author.to_h.to_json
     end
   end
 end

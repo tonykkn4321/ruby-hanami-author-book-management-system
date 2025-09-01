@@ -1,11 +1,15 @@
-# frozen_string_literal: true
+module App::Actions::Authors
+  class Delete < App::Action
+    def handle(req, res)
+      repo = AuthorRepository.new
+      author = repo.find(req.params[:id])
 
-module Tx
-  module Actions
-    module Authors
-      class Delete < Tx::Action
-        def handle(request, response)
-        end
+      if author
+        repo.delete(author.id)
+        res.status = 204
+      else
+        res.status = 404
+        res.body = { error: "Author not found" }.to_json
       end
     end
   end

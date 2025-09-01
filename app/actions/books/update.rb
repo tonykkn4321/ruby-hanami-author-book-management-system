@@ -1,11 +1,15 @@
-# frozen_string_literal: true
+module App::Actions::Books
+  class Update < App::Action
+    def handle(req, res)
+      repo = BookRepository.new
+      book = repo.find(req.params[:id])
 
-module Tx
-  module Actions
-    module Books
-      class Update < Tx::Action
-        def handle(request, response)
-        end
+      if book
+        updated = repo.update(book.id, req.params.slice(:title, :year, :author_id))
+        res.body = updated.to_h.to_json
+      else
+        res.status = 404
+        res.body = { error: "Book not found" }.to_json
       end
     end
   end

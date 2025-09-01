@@ -1,14 +1,8 @@
-module Tx
-  module Actions
-    module Authors
-      class Index < Hanami::Action
-        def handle(request, response)
-          authors = ::AuthorRepository.new.all
-
-          response.status = 200
-          response.body = authors.to_json
-        end
-      end
+module App::Actions::Authors
+  class Index < App::Action
+    def handle(_req, res)
+      authors = AuthorRepository.new.all
+      res.body = authors.map(&:to_h).to_json
     end
   end
 end

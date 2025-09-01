@@ -1,13 +1,5 @@
-module Tx
-  module Views
-    module Authors
-      class Index < Hanami::View
-        def locals(context)
-          {
-            authors: context[:authors]
-          }
-        end
-      end
-    end
+module App::Views::Authors
+  class Index < App::View
+    expose :authors
   end
 end

@@ -1,3 +1,50 @@
+# Project structure:
+app/
+├── actions/
+│   ├── authors/
+│   │   ├── index.rb
+│   │   ├── show.rb
+│   │   ├── create.rb
+│   │   ├── update.rb
+│   │   └── delete.rb
+│   └── books/
+│       ├── index.rb
+│       ├── show.rb
+│       ├── create.rb
+│       ├── update.rb
+│       └── delete.rb
+├── views/
+│   ├── authors/
+│   │   ├── index.rb
+│   │   ├── show.rb
+│   │   ├── create.rb
+│   │   ├── update.rb
+│   │   └── delete.rb
+│   └── books/
+│       ├── index.rb
+│       ├── show.rb
+│       ├── create.rb
+│       ├── update.rb
+│       └── delete.rb
+├── entities/
+│   ├── author.rb
+│   └── book.rb
+└── repositories/
+    ├── author_repository.rb
+    └── book_repository.rb
+
+config/
+├── routes.rb
+├── database.yml
+└── db/
+    ├── migrate/
+    │   ├── 2025xxxxxx_create_authors.rb
+    │   └── 2025xxxxxx_create_books.rb
+    └── schema.sql (optional)
+
+
+
+
 # Gemfile:
 ruby '3.4.5'
 
