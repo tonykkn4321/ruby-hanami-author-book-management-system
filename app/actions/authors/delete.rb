@@ -1,5 +1,5 @@
 module Tx::Actions::Authors
-  class Delete < Hanami::Action
+  class Delete < Tx::Action
     include Deps["repositories.author_repository"]
     def handle(req, res)
       repo = Tx::Repositories::AuthorRepository.new

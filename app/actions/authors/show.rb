@@ -1,5 +1,5 @@
 module Tx::Actions::Authors
-  class Show < Hanami::Action
+  class Show < Tx::Action
     include Deps["repositories.author_repository"]
     def handle(req, res)
       author = Tx::Repositories::AuthorRepository.new.find(req.params[:id])

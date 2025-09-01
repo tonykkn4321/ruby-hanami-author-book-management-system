@@ -1,5 +1,5 @@
 module Tx::Actions::Books
-  class Create < Hanami::Action
+  class Create < Tx::Action
     include Deps["repositories.book_repository"]
     def handle(req, res)
       input = req.params.slice(:title, :year, :author_id)

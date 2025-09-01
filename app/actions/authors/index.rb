@@ -1,5 +1,5 @@
 module Tx::Actions::Authors
-  class Index < Hanami::Action
+  class Index < Tx::Action
     include Deps["repositories.author_repository"]
     def handle(_req, res)
       authors = Tx::Repositories::AuthorRepository.new.all

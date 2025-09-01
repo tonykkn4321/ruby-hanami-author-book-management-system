@@ -1,5 +1,5 @@
 module Tx::Actions::Books
-  class Show < Hanami::Action
+  class Show < Tx::Action
     include Deps["repositories.book_repository"]
     def handle(req, res)
       book = Tx::Repositories::BookRepository.new.find(req.params[:id])
