@@ -1,5 +1,6 @@
 module Tx::Actions::Books
   class Update < Hanami::Action
+    include Deps["repositories.book_repository"]
     def handle(req, res)
       repo = Tx::Repositories::BookRepository.new
       book = repo.find(req.params[:id])
