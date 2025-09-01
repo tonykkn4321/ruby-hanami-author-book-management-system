@@ -1,7 +1,7 @@
 module Tx::Actions::Books
   class Show < Hanami::Action
     def handle(req, res)
-      book = BookRepository.new.find(req.params[:id])
+      book = Tx::Repositories::BookRepository.new.find(req.params[:id])
       if book
         res.body = book.to_h.to_json
       else

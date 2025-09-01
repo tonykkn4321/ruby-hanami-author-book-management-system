@@ -1,7 +1,7 @@
 module Tx::Actions::Books
   class Update < Hanami::Action
     def handle(req, res)
-      repo = BookRepository.new
+      repo = Tx::Repositories::BookRepository.new
       book = repo.find(req.params[:id])
 
       if book

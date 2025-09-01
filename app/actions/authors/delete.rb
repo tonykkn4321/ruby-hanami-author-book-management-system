@@ -1,7 +1,7 @@
 module Tx::Actions::Authors
   class Delete < Hanami::Action
     def handle(req, res)
-      repo = AuthorRepository.new
+      repo = Tx::Repositories::AuthorRepository.new
       author = repo.find(req.params[:id])
 
       if author

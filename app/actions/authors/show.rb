@@ -1,7 +1,7 @@
 module Tx::Actions::Authors
   class Show < Hanami::Action
     def handle(req, res)
-      author = AuthorRepository.new.find(req.params[:id])
+      author = Tx::Repositories::AuthorRepository.new.find(req.params[:id])
       if author
         res.body = author.to_h.to_json
       else
