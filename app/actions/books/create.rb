@@ -1,4 +1,4 @@
-
+module Tx::Actions::Books
   class Create < Hanami::Action
     def handle(req, res)
       input = req.params.slice(:title, :year, :author_id)
@@ -7,4 +7,4 @@
       res.body = book.to_h.to_json
     end
   end
-
+end

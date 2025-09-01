@@ -1,4 +1,4 @@
-
+module Tx::Actions::Authors
   class Update < Hanami::Action
     def handle(req, res)
       repo = AuthorRepository.new
@@ -13,4 +13,4 @@
       end
     end
   end
-
+end

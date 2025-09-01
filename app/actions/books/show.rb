@@ -1,4 +1,4 @@
-
+module Tx::Actions::Books
   class Show < Hanami::Action
     def handle(req, res)
       book = BookRepository.new.find(req.params[:id])
@@ -10,4 +10,4 @@
       end
     end
   end
-
+end
