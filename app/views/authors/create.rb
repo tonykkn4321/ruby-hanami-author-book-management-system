@@ -1,5 +1,5 @@
-module App::Views::Authors
-  class Create < App::View
+
+  class Create < Hanami::View
     expose :author
   end
-end
+

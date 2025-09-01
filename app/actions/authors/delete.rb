@@ -1,5 +1,5 @@
-module App::Actions::Authors
-  class Delete < App::Action
+
+  class Delete < Hanami::Action
     def handle(req, res)
       repo = AuthorRepository.new
       author = repo.find(req.params[:id])
@@ -13,4 +13,4 @@ module App::Actions::Authors
       end
     end
   end
-end
+

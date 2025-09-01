@@ -1,5 +1,5 @@
-module App::Views::Books
-  class Index < App::View
+
+  class Index < Hanami::View
     expose :books
   end
-end
+

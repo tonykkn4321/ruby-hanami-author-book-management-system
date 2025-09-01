@@ -1,5 +1,5 @@
-module App::Actions::Authors
-  class Show < App::Action
+
+  class Show < Hanami::Action
     def handle(req, res)
       author = AuthorRepository.new.find(req.params[:id])
       if author
@@ -10,4 +10,4 @@ module App::Actions::Authors
       end
     end
   end
-end
+

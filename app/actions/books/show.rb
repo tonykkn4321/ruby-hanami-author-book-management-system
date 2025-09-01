@@ -1,5 +1,5 @@
-module App::Actions::Books
-  class Show < App::Action
+
+  class Show < Hanami::Action
     def handle(req, res)
       book = BookRepository.new.find(req.params[:id])
       if book
@@ -10,4 +10,4 @@ module App::Actions::Books
       end
     end
   end
-end
+

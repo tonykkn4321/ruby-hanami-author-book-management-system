@@ -1,5 +1,5 @@
-module App::Views::Authors
-  class Update < App::View
+
+  class Update < Hanami::View
     expose :author
   end
-end
+

@@ -1,5 +1,5 @@
-module App::Actions::Books
-  class Create < App::Action
+
+  class Create < Hanami::Action
     def handle(req, res)
       input = req.params.slice(:title, :year, :author_id)
       book = BookRepository.new.create(input)
@@ -7,4 +7,4 @@ module App::Actions::Books
       res.body = book.to_h.to_json
     end
   end
-end
+

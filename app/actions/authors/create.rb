@@ -1,5 +1,4 @@
-module App::Actions::Authors
-  class Create < App::Action
+class Create < Hanami::Action
     def handle(req, res)
       input = req.params.slice(:first_name, :last_name)
       author = AuthorRepository.new.create(input)
@@ -7,4 +6,3 @@ module App::Actions::Authors
       res.body = author.to_h.to_json
     end
   end
-end

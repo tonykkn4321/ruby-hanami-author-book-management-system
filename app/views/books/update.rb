@@ -1,5 +1,5 @@
-module App::Views::Books
-  class Update < App::View
+
+  class Update < Hanami::View
     expose :book
   end
-end
+

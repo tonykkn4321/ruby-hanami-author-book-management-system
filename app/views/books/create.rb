@@ -1,5 +1,5 @@
-module App::Views::Books
-  class Create < App::View
+
+  class Create < Hanami::View
     expose :book
   end
-end
+

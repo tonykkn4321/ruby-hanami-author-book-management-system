@@ -1,5 +1,5 @@
-module App::Views::Authors
-  class Index < App::View
+
+  class Index < Hanami::View
     expose :authors
   end
-end
+

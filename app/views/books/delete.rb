@@ -1,5 +1,5 @@
-module App::Views::Books
-  class Delete < App::View
+
+  class Delete < Hanami::View
     expose :book
   end
-end
+

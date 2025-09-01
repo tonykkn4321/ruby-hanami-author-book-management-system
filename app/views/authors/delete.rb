@@ -1,5 +1,5 @@
-module App::Views::Authors
-  class Delete < App::View
+
+  class Delete < Hanami::View
     expose :author
   end
-end
+
