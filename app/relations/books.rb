@@ -7,7 +7,7 @@ module RubyHanamiAuthorBookManagementSystem
          attribute :title, Types::String
          attribute :year, Types::Int
          attribute :author_id, Types::Int
-        end
+        
      end
     end
   end
