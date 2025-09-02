@@ -47,6 +47,7 @@ config/
 
 # Gemfile:
 ruby '3.4.5'
+gem 'pg'
 
 # Generate models:
 hanami generate relation author 

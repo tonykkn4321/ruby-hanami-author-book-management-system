@@ -16,6 +16,7 @@ gem "dry-types", "~> 1.7"
 gem "dry-operation"
 gem "puma"
 gem "rake"
+gem "pg"
 gem "sqlite3"
 
 group :development do
