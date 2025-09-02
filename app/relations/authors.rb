@@ -9,7 +9,7 @@ module RubyHanamiAuthorBookManagementSystem
       #schema :authors, infer: true do
         #attribute :first_name, Types::String
         #attribute :last_name, Types::String
-      end
+      
     end
   end
 end
