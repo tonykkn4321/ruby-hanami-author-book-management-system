@@ -27,8 +27,8 @@ app/
 │       ├── update.rb
 │       └── delete.rb
 ├── relations/
-│   ├── author.rb
-│   └── book.rb
+│   ├── authors.rb
+│   └── books.rb
 └── repos/
     ├── author_repository.rb
     └── book_repository.rb
@@ -50,8 +50,8 @@ ruby '3.4.5'
 gem 'pg'
 
 # Generate models:
-hanami generate relation author 
-hanami generate relation book 
+hanami generate relation authors
+hanami generate relation books
 
 # Generate repos:
 hanami generate repo author_repository
