@@ -53,8 +53,8 @@ hanami generate relation author
 hanami generate relation book 
 
 # Generate repos:
-hanami generate repo authorr_repository
-hanami generate repo bookr_repository
+hanami generate repo author_repository
+hanami generate repo book_repository
 
 
 # Generate actions:

@@ -4,6 +4,11 @@ module RubyHanamiAuthorBookManagementSystem
   module Relations
     class Author < RubyHanamiAuthorBookManagementSystem::DB::Relation
       schema :author, infer: true
+        field :first_name, Types::String
+        field :last_name, Types::String
+      end
     end
   end
 end
+
+
