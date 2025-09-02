@@ -3,9 +3,12 @@
 module RubyHanamiAuthorBookManagementSystem
   module Relations
     class Authors < RubyHanamiAuthorBookManagementSystem::DB::Relation
-      schema :authors, infer: true do
-        attribute :first_name, Types::String
-        attribute :last_name, Types::String
+      
+      schema(infer: true)
+      
+      #schema :authors, infer: true do
+        #attribute :first_name, Types::String
+        #attribute :last_name, Types::String
       end
     end
   end
