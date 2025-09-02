@@ -2,8 +2,8 @@
 
 module RubyHanamiAuthorBookManagementSystem
   module Relations
-    class Book < RubyHanamiAuthorBookManagementSystem::DB::Relation
-      schema :book, infer: true do
+    class Books < RubyHanamiAuthorBookManagementSystem::DB::Relation
+      schema :books, infer: true do
         attribute :title, Types::String
         attribute :year, Types::Int
         attribute :author_id, Types::Int
