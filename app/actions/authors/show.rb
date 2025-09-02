@@ -1,13 +1,11 @@
-module Tx::Actions::Authors
-  class Show < Tx::Action
-    include Import["repositories.author_repository"]
-    def handle(req, res)
-      author = Tx::Repositories::AuthorRepository.new.find(req.params[:id])
-      if author
-        res.body = author.to_h.to_json
-      else
-        res.status = 404
-        res.body = { error: "Author not found" }.to_json
+# frozen_string_literal: true
+
+module RubyHanamiAuthorBookManagementSystem
+  module Actions
+    module Authors
+      class Show < RubyHanamiAuthorBookManagementSystem::Action
+        def handle(request, response)
+        end
       end
     end
   end

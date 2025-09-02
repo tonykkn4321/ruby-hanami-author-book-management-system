@@ -26,10 +26,10 @@ app/
 │       ├── create.rb
 │       ├── update.rb
 │       └── delete.rb
-├── entities/
+├── relations/
 │   ├── author.rb
 │   └── book.rb
-└── repositories/
+└── repos/
     ├── author_repository.rb
     └── book_repository.rb
 
@@ -48,7 +48,16 @@ config/
 # Gemfile:
 ruby '3.4.5'
 
-# Generate Resources:
+# Generate models:
+hanami generate relation author 
+hanami generate relation book 
+
+# Generate repos:
+hanami generate repo authorr_repository
+hanami generate repo bookr_repository
+
+
+# Generate actions:
 hanami generate action authors.index
 hanami generate action authors.create
 hanami generate action authors.show

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Tx
+module RubyHanamiAuthorBookManagementSystem
   class Settings < Hanami::Settings
     # Define your app settings here, for example:
     #

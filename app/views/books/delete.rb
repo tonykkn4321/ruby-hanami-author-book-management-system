@@ -1,5 +1,10 @@
-module Tx::Views::Books
-  class Delete < Hanami::View
-    expose :book
+# frozen_string_literal: true
+
+module RubyHanamiAuthorBookManagementSystem
+  module Views
+    module Books
+      class Delete < RubyHanamiAuthorBookManagementSystem::View
+      end
+    end
   end
 end

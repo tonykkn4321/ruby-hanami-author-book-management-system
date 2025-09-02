@@ -1,5 +1,5 @@
 {
-  "name": "tx",
+  "name": "ruby_hanami_author_book_management_system",
   "private": true,
   "type": "module",
   "dependencies": {

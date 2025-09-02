@@ -2,7 +2,7 @@
 
 require "hanami/db/repo"
 
-module Tx
+module RubyHanamiAuthorBookManagementSystem
   module DB
     class Repo < Hanami::DB::Repo
     end

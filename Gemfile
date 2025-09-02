@@ -16,7 +16,7 @@ gem "dry-types", "~> 1.7"
 gem "dry-operation"
 gem "puma"
 gem "rake"
-gem "pg"
+gem "sqlite3"
 
 group :development do
   gem "hanami-webconsole", "~> 2.2"

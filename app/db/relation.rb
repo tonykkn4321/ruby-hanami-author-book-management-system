@@ -2,7 +2,7 @@
 
 require "hanami/db/relation"
 
-module Tx
+module RubyHanamiAuthorBookManagementSystem
   module DB
     class Relation < Hanami::DB::Relation
     end

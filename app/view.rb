@@ -3,7 +3,7 @@
 
 require "hanami/view"
 
-module Tx
+module RubyHanamiAuthorBookManagementSystem
   class View < Hanami::View
   end
 end

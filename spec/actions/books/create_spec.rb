@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Tx::Actions::Books::Create do
+RSpec.describe RubyHanamiAuthorBookManagementSystem::Actions::Books::Create do
   let(:params) { Hash[] }
 
   it "works" do

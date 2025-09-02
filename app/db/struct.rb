@@ -2,7 +2,7 @@
 
 require "hanami/db/struct"
 
-module Tx
+module RubyHanamiAuthorBookManagementSystem
   module DB
     class Struct < Hanami::DB::Struct
     end

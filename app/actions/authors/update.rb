@@ -1,16 +1,11 @@
-module Tx::Actions::Authors
-  class Update < Tx::Action
-    include Import["repositories.author_repository"]
-    def handle(req, res)
-      repo = Tx::Repositories::AuthorRepository.new
-      author = repo.find(req.params[:id])
+# frozen_string_literal: true
 
-      if author
-        updated = repo.update(author.id, req.params.slice(:first_name, :last_name))
-        res.body = updated.to_h.to_json
-      else
-        res.status = 404
-        res.body = { error: "Author not found" }.to_json
+module RubyHanamiAuthorBookManagementSystem
+  module Actions
+    module Authors
+      class Update < RubyHanamiAuthorBookManagementSystem::Action
+        def handle(request, response)
+        end
       end
     end
   end

@@ -2,7 +2,7 @@
 
 require "hanami"
 
-module Tx
+module RubyHanamiAuthorBookManagementSystem
   class App < Hanami::App
   end
 end

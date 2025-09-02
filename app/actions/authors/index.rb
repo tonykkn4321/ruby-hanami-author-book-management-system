@@ -1,9 +1,12 @@
-module Tx::Actions::Authors
-  class Index < Tx::Action
-    include Import["repositories.author_repository"]
-    def handle(_req, res)
-      authors = Tx::Repositories::AuthorRepository.new.all
-      res.body = authors.map(&:to_h).to_json
+# frozen_string_literal: true
+
+module RubyHanamiAuthorBookManagementSystem
+  module Actions
+    module Authors
+      class Index < RubyHanamiAuthorBookManagementSystem::Action
+        def handle(request, response)
+        end
+      end
     end
   end
 end

@@ -2,7 +2,7 @@
 
 require "dry/types"
 
-module Tx
+module RubyHanamiAuthorBookManagementSystem
   Types = Dry.Types
 
   module Types

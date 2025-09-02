@@ -1,11 +1,12 @@
-module Tx::Actions::Authors
-  class Create < Tx::Action
-      include Import["repositories.author_repository"]
-      def handle(req, res)
-        input = req.params.slice(:first_name, :last_name)
-        author = Tx::Repositories::AuthorRepository.new.create(input)
-        res.status = 201
-        res.body = author.to_h.to_json
+# frozen_string_literal: true
+
+module RubyHanamiAuthorBookManagementSystem
+  module Actions
+    module Authors
+      class Create < RubyHanamiAuthorBookManagementSystem::Action
+        def handle(request, response)
+        end
       end
+    end
   end
 end

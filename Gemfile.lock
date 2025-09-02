@@ -201,7 +201,6 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     ostruct (0.6.3)
-    pg (1.6.1-x64-mingw-ucrt)
     pry (0.15.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -263,6 +262,7 @@ GEM
     sequel (5.95.1)
       bigdecimal
     shellany (0.0.1)
+    sqlite3 (2.7.3-x64-mingw-ucrt)
     temple (0.10.4)
     thor (1.4.0)
     tilt (2.6.1)
@@ -290,10 +290,10 @@ DEPENDENCIES
   hanami-validations (~> 2.2)
   hanami-view (~> 2.2)
   hanami-webconsole (~> 2.2)
-  pg
   puma
   rack-test
   rake
+  sqlite3
 
 RUBY VERSION
    ruby 3.4.5p51

@@ -3,7 +3,7 @@
 
 require "dry/operation"
 
-module Tx
+module RubyHanamiAuthorBookManagementSystem
   class Operation < Dry::Operation
   end
 end
