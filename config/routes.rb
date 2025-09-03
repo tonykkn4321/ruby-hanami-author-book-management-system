@@ -26,5 +26,9 @@ module RubyHanamiAuthorBookManagementSystem
     get "/books/:id", to: "books.show"
     patch "/books/:id", to: "books.update"
     get "/books/delete", to: "books.delete"
+    get "/authos/authors_controller", to: "authos.authors_controller"
+    get "/authors/authors_controller", to: "authors.authors_controller"
+    get "/authors/authors_controller", to: "authors.authors_controller"
+    get "/books/books_controller", to: "books.books_controller"
   end
 end
