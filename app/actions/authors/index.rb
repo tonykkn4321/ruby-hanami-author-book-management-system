@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative '../../../repos/authors_repository' # Adjust path as needed
+
 module RubyHanamiAuthorBookManagementSystem
   module Actions
     module Authors
@@ -12,3 +14,5 @@ module RubyHanamiAuthorBookManagementSystem
     end
   end
 end
+
+
