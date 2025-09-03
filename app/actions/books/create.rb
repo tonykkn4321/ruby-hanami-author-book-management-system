@@ -3,15 +3,8 @@
 module RubyHanamiAuthorBookManagementSystem
   module Actions
     module Books
-      class BooksController < RubyHanamiAuthorBookManagementSystem::Action
-        # List all books
-        def index
-          books = BooksRepository.new.all
-          response.json(books)
-        end
-
-        # Create a new book
-        def create
+      class Create < RubyHanamiAuthorBookManagementSystem::Action
+        def handle(request, response)
           book = BooksRepository.new.create(params[:book])
           response.json(book, status: :created)
         end

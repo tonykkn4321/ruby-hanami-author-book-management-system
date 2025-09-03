@@ -2,8 +2,8 @@
 
 module RubyHanamiAuthorBookManagementSystem
   module Views
-    module Authors
-      class AuthorsController < RubyHanamiAuthorBookManagementSystem::View
+    module Books
+      class Index < RubyHanamiAuthorBookManagementSystem::View
       end
     end
   end
