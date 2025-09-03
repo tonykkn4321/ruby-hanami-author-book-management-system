@@ -2,7 +2,7 @@
 
 module RubyHanamiAuthorBookManagementSystem
   module Repos
-    class AuthorsRepositoryRepo < RubyHanamiAuthorBookManagementSystem::DB::Repo
+    class AuthorsRepository < RubyHanamiAuthorBookManagementSystem::DB::Repo
      def initialize(rom)
       @rom = rom
      end
