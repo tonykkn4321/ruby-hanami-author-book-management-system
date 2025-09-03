@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../repos/authors_repository' # Adjust path as needed
+require_relative './app/repos/authors_repository' # Adjust path as needed
 
 module RubyHanamiAuthorBookManagementSystem
   module Actions
