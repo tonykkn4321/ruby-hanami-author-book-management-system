@@ -8,7 +8,7 @@ module RubyHanamiAuthorBookManagementSystem
       class Index < RubyHanamiAuthorBookManagementSystem::Action
         def handle(request, response)
           # Fully qualify the repository to avoid NameError
-          authors_repository = RubyHanamiAuthorBookManagementSystem::Repo::AuthorsRepository.new(rom)
+          authors_repository = RubyHanamiAuthorBookManagementSystem::App::Repo::AuthorsRepository.new(rom)
           authors = authors_repository.all
           response.json(authors)
         end
