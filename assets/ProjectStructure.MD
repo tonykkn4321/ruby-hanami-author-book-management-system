@@ -30,8 +30,8 @@ app/
 │   ├── authors.rb
 │   └── books.rb
 └── repos/
-    ├── author_repository.rb
-    └── book_repository.rb
+    ├── authors_repository.rb
+    └── books_repository.rb
 
 config/
 ├── routes.rb
@@ -54,8 +54,8 @@ hanami generate relation authors
 hanami generate relation books
 
 # Generate repos:
-hanami generate repo author_repository
-hanami generate repo book_repository
+hanami generate repo authors_repository
+hanami generate repo books_repository
 
 
 # Generate actions:

@@ -2,8 +2,7 @@
 
 module RubyHanamiAuthorBookManagementSystem
   module Repos
-    class AuthorRepositoryRepo < RubyHanamiAuthorBookManagementSystem::DB::Repo
-      
+    class AuthorsRepositoryRepo < RubyHanamiAuthorBookManagementSystem::DB::Repo
     end
   end
 end
