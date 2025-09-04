@@ -7,6 +7,9 @@ module RubyHanamiAuthorBookManagementSystem
         def handle(request, response)
           # Fetch all authors from the relation
           authors = RubyHanamiAuthorBookManagementSystem::Relations::Authors.new.to_a
+          
+          # Add logging
+          puts "Fetched authors: #{authors.inspect}"
 
           # Set the response body, status, and content type
           response.body = authors.to_json

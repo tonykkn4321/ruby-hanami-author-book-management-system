@@ -8,6 +8,9 @@ module RubyHanamiAuthorBookManagementSystem
           # Fetch all books from the relation
           books = RubyHanamiAuthorBookManagementSystem::Relations::Books.new.to_a
 
+          # Add logging
+          puts "Fetched books: #{books.inspect}"
+
           # Set the response body, status, and content type
           response.body = books.to_json
           response.status = 200
