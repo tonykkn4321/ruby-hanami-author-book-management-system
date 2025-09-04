@@ -6,7 +6,8 @@ module RubyHanamiAuthorBookManagementSystem
       class Index < RubyHanamiAuthorBookManagementSystem::Action
         def handle(request, response)
           # Fetch all authors from the relation
-          authors = RubyHanamiAuthorBookManagementSystem::Relations::Authors.new.to_a
+          # authors = RubyHanamiAuthorBookManagementSystem::Relations::Authors.new.to_a
+          authors = rom.relations[:authors].to_a
           
           # Add logging
           puts "Fetched authors: #{authors.inspect}"
