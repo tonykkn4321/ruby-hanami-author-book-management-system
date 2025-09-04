@@ -5,7 +5,10 @@ module RubyHanamiAuthorBookManagementSystem
     module Books
       class Index < RubyHanamiAuthorBookManagementSystem::Action
         def handle(request, response)
+          # Fetch all books from the relation
           books = RubyHanamiAuthorBookManagementSystem::Relations::Books.new.to_a
+
+          # Set the response body, status, and content type
           response.body = books.to_json
           response.status = 200
           response.content_type = 'application/json'
