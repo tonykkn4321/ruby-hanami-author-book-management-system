@@ -29,10 +29,7 @@ app/
 ├── relations/
 │   ├── authors.rb
 │   └── books.rb
-└── repos/
-    ├── authors_repository.rb
-    └── books_repository.rb
-
+|
 config/
 ├── routes.rb
 ├── database.yml
@@ -52,10 +49,6 @@ gem 'pg'
 # Generate models:
 hanami generate relation authors
 hanami generate relation books
-
-# Generate repos:
-hanami generate repo authors_repository
-hanami generate repo books_repository
 
 
 # Generate actions:

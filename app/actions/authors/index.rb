@@ -7,9 +7,10 @@ module RubyHanamiAuthorBookManagementSystem
     module Authors
       class Index < RubyHanamiAuthorBookManagementSystem::Action
         def handle(request, response)
-          authors_repository = RubyHanamiAuthorBookManagementSystem::Repos::AuthorsRepository.new()
-          authors = authors_repository.all
-          response.json(authors)
+          authors = RubyHanamiAuthorBookManagementSystem::Relations::Authors.new.to_a
+          response.body = authors.to_json
+          response.status = 200
+          response.content_type = 'application/json'
         end
       end
     end
