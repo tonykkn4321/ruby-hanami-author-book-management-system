@@ -4,12 +4,12 @@ module RubyHanamiAuthorBookManagementSystem
   module Repos
     class BooksRepo < RubyHanamiAuthorBookManagementSystem::DB::Repo
       def all
-        authors.to_a
+        books.to_a
       end
 
       private
 
-      def authors
+      def books
         root
       end
     end
