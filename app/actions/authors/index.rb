@@ -32,10 +32,11 @@ module RubyHanamiAuthorBookManagementSystem
   module Actions
     module Authors
       class Index < RubyHanamiAuthorBookManagementSystem::Action
-        include Deps["persistence.repos.authors_repo"]
-
         def handle(_req, res)
-          authors = authors_repo.all
+          repo = RubyHanamiAuthorBookManagementSystem::Repos::AuthorsRepo.new
+          authors = repo.all
+
+          res.headers["Content-Type"] = "application/json"
           res.status = 200
           res.body = authors.map { |author| serialize(author) }.to_json
         end
@@ -45,8 +46,8 @@ module RubyHanamiAuthorBookManagementSystem
         def serialize(author)
           {
             id: author.id,
-            name: author.name,
-            bio: author.bio,
+            first_name: author.first_name,
+            last_name: author.last_name,
             created_at: author.created_at
           }
         end

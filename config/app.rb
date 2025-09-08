@@ -4,5 +4,6 @@ require "hanami"
 
 module RubyHanamiAuthorBookManagementSystem
   class App < Hanami::App
+   
   end
 end
