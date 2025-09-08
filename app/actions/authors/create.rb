@@ -1,3 +1,5 @@
+# From POE:
+
 # frozen_string_literal: true
 '''
 module RubyHanamiAuthorBookManagementSystem
@@ -25,6 +27,8 @@ module RubyHanamiAuthorBookManagementSystem
 end
 '''
 
+
+# From Copilot:
 
 # frozen_string_literal: true
 

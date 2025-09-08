@@ -43,7 +43,7 @@ module RubyHanamiAuthorBookManagementSystem
 
         private
 
-        def serialize(author)
+        def serialize(book)
           {
             id: book.id,
             title: book.title,
