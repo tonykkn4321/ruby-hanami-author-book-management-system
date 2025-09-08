@@ -47,8 +47,7 @@ module RubyHanamiAuthorBookManagementSystem
           {
             id: author.id,
             first_name: author.first_name,
-            last_name: author.last_name,
-            created_at: author.created_at
+            last_name: author.last_name
           }
         end
       end
