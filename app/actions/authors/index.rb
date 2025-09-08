@@ -16,7 +16,7 @@ module RubyHanamiAuthorBookManagementSystem
           # Set the response body, status, and content type
           response.body = authors.to_json
           response.status = 200
-          response.content_type = 'application/json'
+          response.content_type = "application/json"
         end
       end
     end
