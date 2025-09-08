@@ -2,7 +2,7 @@
 
 module RubyHanamiAuthorBookManagementSystem
   module Repos
-    class AuthorsRepo < RubyHanamiAuthorBookManagementSystem::DB::Repo
+    class BooksRepo < RubyHanamiAuthorBookManagementSystem::DB::Repo
       def all
         authors.to_a
       end
@@ -15,4 +15,3 @@ module RubyHanamiAuthorBookManagementSystem
     end
   end
 end
-
