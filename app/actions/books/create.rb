@@ -41,7 +41,7 @@ module RubyHanamiAuthorBookManagementSystem
 
           res.headers["Content-Type"] = "application/json"
           res.status = 200
-          res.body = books.map { |book| serialize(author) }.to_json
+          res.body = books.map { |book| serialize(book) }.to_json
         end
 
         private
